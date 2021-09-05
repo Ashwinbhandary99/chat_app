@@ -22,12 +22,12 @@ const Theirmessage = ({lastmessage, message}) => {
         ) :(
             <div className="message" style={{float: 'left' , backgroundColor:'#CABCDC',marginLeft: firstmsguser ? '4px' : '48px' }}> 
                 {message.text}
-                Mymessage</div>
+                </div>
             )
         )
         }
 
-        MessageForm
+    
         </div>
     );
 }

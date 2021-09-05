@@ -16,7 +16,7 @@ const Mymessage = ({message}) => {
     return(
         <div className="message" style={{float: 'right' , marginRight:'18px', color:'white', backgroundColor:'(90deg, rgba(116,112,168,0.958420868347339) 13%, rgba(64,64,85,1) 37%, rgba(0,212,255,1) 100%);',}}> 
         {message.text}
-        Mymessage</div>
+        </div>
     );
 }
 export default Mymessage;

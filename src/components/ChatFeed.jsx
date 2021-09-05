@@ -24,7 +24,7 @@ const renderMessages = () => {
                     }
                 </div>
                 <div className="read-receipts" style={{marginRight: ismymessage ? '18px' :'0px', marginLeft: ismymessage ? '0px' : '68px' }}> 
-                    read-receipt left 
+                   
                 </div>
             </div>
         )  
