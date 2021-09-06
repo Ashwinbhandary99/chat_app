@@ -23,8 +23,9 @@ const Messageform = (props) => {
 
         const text = value.trim();
 
-        if (text.length > 0) 
+        if (text.length > 0) {
         sendMessage(creds, chatID, {text} );
+        }
 
         setValue('');
     };
@@ -42,10 +43,9 @@ const Messageform = (props) => {
 
 
         />
-        <label htmlFor= "uplaod-button">
+        <label htmlFor= "upload-button">
             <span className="image-button">
                 <PictureOutlined className="picture-icon"/>
-                <SendOutlined/>
             </span>
         </label>
         <input
@@ -53,7 +53,7 @@ const Messageform = (props) => {
             multiple={false}
             id="upload-button"
             style={{display:'none'}}
-            onChange={handleUpload}
+            onChange={handleUpload.bind(this)}
         />
         <button type="Submit" className="send-button"> 
             <SendOutlined className="send-icon"/>
